@@ -19,7 +19,7 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class RibbonConfig {
     @Bean
-    @LoadBalanced
+    @LoadBalanced // 轮询机制
     RestTemplate restTemplate(){
         return new RestTemplate();
     }
